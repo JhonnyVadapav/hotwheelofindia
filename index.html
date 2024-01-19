@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add your meta tags and link to styles.css -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -9,7 +10,9 @@
 <body>
 
     <header>
-        <h1>HOTWHEEL HUB INDIA</h1>
+        <div class="logo">
+            <img src="./images/logo.jpeg" alt="Logo">
+        </div>
     </header>
 
     <nav>
@@ -23,18 +26,25 @@
     </nav>
 
     <section>
-    <script src="index.js" defer></script>
-    <div class="container">
-        <div class="arrow left" onclick="handleClick('left')">
-            <div class="icon">&lt;</div>
+        <script src="index.js" defer></script>
+        <div class="container">
+            <div class="wrapper" id="slider-wrapper">
+                <!-- Slide items will be added here using JavaScript -->
+            </div>
+            <div class="constant-content">
+                <!-- Constant content here -->
+                <div class="subtitle">Constant Subtitle</div>
+                <h1 class="title">Constant Title</h1>
+                <p class="content">This is constant content that remains in the front</p>
+                <button class="button" onclick="handleConstantButtonClick()">Get Started Now!</button>
+            </div>
+            <div class="arrow left" onclick="handleClick('left')">
+                <div class="icon">&lt;</div>
+            </div>
+            <div class="arrow right" onclick="handleClick('right')">
+                <div class="icon">&gt;</div>
+            </div>
         </div>
-        <div class="wrapper" id="slider-wrapper">
-            <!-- Slide items will be added here using JavaScript -->
-        </div>
-        <div class="arrow right" onclick="handleClick('right')">
-            <div class="icon">&gt;</div>
-        </div>
-    </div>
     </section>
 
 </body>

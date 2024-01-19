@@ -1,55 +1,66 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: rebeccapurple;
-    color: #fff;
-    text-align: center;
-    padding: 40px 40px;
+  background-color: crimson; /* Change to the desired ruby color */
+  color: #fff;
+  text-align: center;
+  padding: 20px 40px; /* Adjust padding as needed */
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 100px; /* Set the width of your logo as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+h1 {
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
 }
 
 nav {
-    background-color: purple;
-    padding: 10px 0;
+  background-color: black;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 section {
-    padding: 20px;
+  padding: 20px;
 }
+
+/* Rest of your existing styles for the slider */
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
   }
   
-  .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-  }
   
   .arrow {
     width: 50px;
@@ -82,58 +93,33 @@ body, html {
     font-size: 24px;
   }
   
-  .wrapper {
-    height: 100%;
-    display: flex;
-    transition: all 0.8s ease;
-  }
-  
-  .slide {
-    width: 100vw;
+  .container {
+    width: 100%;
     height: 100vh;
     display: flex;
-    align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    z-index: -1;
-    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    width: 300%; /* Adjust the width based on the number of slides */
+}
+
+.slide {
+    flex: 1;
+    height: 100%;
     background-size: cover;
-  }
-  
-  .info-container {
-    padding: 0 7%;
-  }
-  
-  .subtitle {
-    margin: 2% 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: #1eb2a6;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .title {
-    text-transform: capitalize;
-  }
-  
-  .content {
-    color: #ACEBF2;
-    padding-top: 2%;
-    line-height: 30px;
-    font-size: 20px;
-  }
-  
-  .button {
-    font-size: 20px;
-    cursor: pointer;
-    padding: 17px 30px;
-    background-color: #1eb2a6;
-    color: #fff;
-    font-weight: 600;
-    border: none;
-    margin: 30px 10px 0 0;
-    border-radius: 3px;
-    box-shadow: 0 24px 36px -11px rgb(0 0 0 / 9%);
-    transition: 0.5s;
-  }
-  
+    background-position: center;
+    box-sizing: border-box;
+    padding: 0 20px; /* Add padding to each slide if needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.constant-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Place constant content above slides */
+}

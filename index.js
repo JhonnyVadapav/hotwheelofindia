@@ -24,27 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
 const sliderItems = [
     {
         id: 1,
-        img: './images/me.jpg',
-        subtitle: 'Tools',
-        title: 'Domain Analysis',
-        content: 'Unlock insights into website security with our Domain Analysis tools',
-        link:'./src/pages/netanalysis.html'
+        img: './images/car1.jpeg'
     },
     {
         id: 2,
-        img: './images/me.jpg',
-        subtitle: 'News',
-        title: 'Catch up on the last news related to cyber-security',
-        content: 'Stay informed and safeguard your digital world! Visit our News page to catch up on the latest cyber security updates and insights. Your online safety matters.',
-        link:'./src/pages/news.html'
+        img: './images/car2.jpeg'
     },
     {
         id: 3,
-        img: './images/me.jpg',
-        subtitle: 'Blogs',
-        title: 'Cyber Insights: Explore Our Informative Blogs',
-        content: 'Dive into our expertly curated blogs for valuable cyber insights, tips, and updates to enhance your online security',
-        link:'./src/pages/blog.html'
+        img: './images/car3.jpeg'
     },
 ];
 
@@ -64,30 +52,6 @@ function renderSlider() {
 
         const infoContainer = document.createElement('div');
         infoContainer.classList.add('info-container');
-
-        const subtitle = document.createElement('div');
-        subtitle.classList.add('subtitle');
-        subtitle.textContent = item.subtitle;
-
-        const title = document.createElement('h1');
-        title.classList.add('title');
-        title.textContent = item.title;
-
-        const content = document.createElement('p');
-        content.classList.add('content');
-        content.textContent = item.content;
-
-        const button = document.createElement('button');
-        button.classList.add('button');
-        button.textContent = 'Get Started Now!';
-        button.addEventListener('click',()=>{
-            window.location.href=item.link;
-        })
-
-        infoContainer.appendChild(subtitle);
-        infoContainer.appendChild(title);
-        infoContainer.appendChild(content);
-        infoContainer.appendChild(button);
 
         slide.appendChild(infoContainer);
         sliderWrapper.appendChild(slide);
