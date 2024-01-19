@@ -123,3 +123,21 @@ body, html {
     transform: translate(-50%, -50%);
     z-index: 1; /* Place constant content above slides */
 }
+main{
+  background-color: #04879c;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
+}
+main h1{
+  font-size: 70px;
+  font-family: cursive;
+  color: #f30a49;
+  background-color: #0c3c78;
+}
+main p{
+  font-size: 40px;
+  font-family: cursive;
+  color: #f30a49;
+  background-color: #090030;
+}
